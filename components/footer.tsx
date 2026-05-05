@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h3 className="font-serif text-lg font-bold mb-4">Hindukash Trek</h3>
+          <h3 className="font-serif text-lg font-bold mb-4">Towards North</h3>
           <p className="text-sm opacity-90">
             Your gateway to authentic mountain adventures in the Hindu Kush and beyond.
           </p>
@@ -51,7 +51,7 @@ export function Footer() {
       </div>
       
       <div className="border-t border-primary-foreground/20 px-4 py-6 text-center text-sm opacity-75">
-        <p>&copy; 2024 Hindukash Trek and Tour. All rights reserved.</p>
+        <p>&copy; 2024 Towards North. All rights reserved.</p>
       </div>
     </footer>
   )

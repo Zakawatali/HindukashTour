@@ -10,13 +10,13 @@ import { Button } from '@/components/ui/button'
 import { tours, destinations, testimonials, heroSlides } from '@/lib/tours-data'
 
 export const metadata: Metadata = {
-  title: 'Hindukash Trek and Tour | Adventure Tours in Northern Pakistan',
+  title: 'Towards North | Adventure Tours in Northern Pakistan',
   description: 'Experience breathtaking trekking expeditions and adventure tours in the Hindu Kush mountains. Expert guides, customized itineraries, and unforgettable mountain experiences.',
   openGraph: {
-    title: 'Hindukash Trek and Tour | Adventure Tours in Northern Pakistan',
+    title: 'Towards North | Adventure Tours in Northern Pakistan',
     description: 'Experience breathtaking trekking expeditions and adventure tours in the Hindu Kush mountains.',
     type: 'website',
-    url: 'https://hindustrekandtour.com',
+    url: 'https://towards-north.com',
   },
 }
 
@@ -34,7 +34,7 @@ export default function Home() {
       <section className="py-16 md:py-24 px-4 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-serif text-4xl font-bold text-center mb-12 text-foreground">
-            Why Choose Hindukash Trek
+            Why Choose Towards North
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
