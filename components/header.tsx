@@ -23,7 +23,7 @@ export function Header() {
             <span className="text-primary-foreground font-serif text-xl font-bold">H</span>
           </div>
           <span className="font-serif text-xl font-bold text-foreground hidden sm:inline">
-            Hindukash Trek
+          Toward's North
           </span>
         </Link>
 
