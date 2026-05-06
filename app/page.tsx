@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 import { HeroSlider } from '@/components/hero-slider'
 import { TourCard } from '@/components/tour-card'
 import { DestinationCard } from '@/components/destination-card'
-import { DestinationSelector } from '@/components/destination-selector'
+
 import { Button } from '@/components/ui/button'
 import { tours, destinations, testimonials, heroSlides } from '@/lib/tours-data'
 
@@ -30,21 +30,6 @@ export default function Home() {
 
       {/* Hero Slider Section */}
       <HeroSlider slides={heroSlides} />
-
-      {/* Destination Selector Section */}
-      <section className="py-12 px-4 bg-gradient-to-r from-primary/5 to-primary/10 border-b border-border overflow-visible">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-6">
-            <h3 className="font-serif text-2xl font-bold text-foreground mb-2">
-              Find Your Adventure
-            </h3>
-            <p className="text-muted-foreground">
-              Select a destination to explore tours and experiences available in that region
-            </p>
-          </div>
-          <DestinationSelector />
-        </div>
-      </section>
 
       {/* Why Choose Us */}
       <section className="py-16 md:py-24 px-4 bg-secondary">

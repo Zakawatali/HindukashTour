@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import { DestinationDropdown } from '@/components/destination-dropdown'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,16 +29,19 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-foreground hover:text-primary transition-colors text-sm font-medium"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center gap-6">
+          <DestinationDropdown />
+          <div className="flex items-center gap-6">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-foreground hover:text-primary transition-colors text-sm font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
           <Button asChild className="bg-primary hover:bg-primary/90">
             <Link href="/contact">Book Now</Link>
           </Button>
