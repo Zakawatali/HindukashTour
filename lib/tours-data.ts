@@ -35,6 +35,64 @@ export interface HeroSlide {
   alt: string
 }
 
+export interface City {
+  id: string
+  name: string
+  region: string
+  description: string
+}
+
+export const cities: City[] = [
+  {
+    id: 'gilgit',
+    name: 'Gilgit',
+    region: 'Gilgit-Baltistan',
+    description: 'Gateway to the Karakoram, hub of mountain adventures'
+  },
+  {
+    id: 'hunza',
+    name: 'Hunza',
+    region: 'Gilgit-Baltistan',
+    description: 'Legendary valley known for natural beauty and longevity'
+  },
+  {
+    id: 'chitral',
+    name: 'Chitral',
+    region: 'Khyber Pakhtunkhwa',
+    description: 'Remote region with dramatic mountain landscapes'
+  },
+  {
+    id: 'skardu',
+    name: 'Skardu',
+    region: 'Gilgit-Baltistan',
+    description: 'Adventure capital surrounded by glaciers and peaks'
+  },
+  {
+    id: 'ismail-abad',
+    name: 'Ismail Abad',
+    region: 'Gilgit-Baltistan',
+    description: 'Pristine mountain village at the base of Hindu Kush'
+  },
+  {
+    id: 'brogil',
+    name: 'Brogil',
+    region: 'Northern Pakistan',
+    description: 'Remote high altitude pass area for expedition trekking'
+  },
+  {
+    id: 'karimabad',
+    name: 'Karimabad',
+    region: 'Gilgit-Baltistan',
+    description: 'Heart of Hunza Valley with historical forts'
+  },
+  {
+    id: 'rawalpindi',
+    name: 'Rawalpindi',
+    region: 'Punjab',
+    description: 'Starting point for treks to nearby alpine regions'
+  }
+]
+
 export const tours: Tour[] = [
   {
     id: 'rakaposhi-base-camp',
