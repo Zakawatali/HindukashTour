@@ -1,5 +1,7 @@
-import type { Metadata } from 'next'
+'use client'
+
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import { ArrowRight, Mountain, Users, Award } from 'lucide-react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
@@ -8,21 +10,22 @@ import { TourCard } from '@/components/tour-card'
 import { DestinationCard } from '@/components/destination-card'
 
 import { Button } from '@/components/ui/button'
-import { tours, destinations, testimonials, heroSlides } from '@/lib/tours-data'
-
-export const metadata: Metadata = {
-  title: 'Hindukash Trek and Tour | Adventure Tours in Northern Pakistan',
-  description: 'Experience breathtaking trekking expeditions and adventure tours in the Hindu Kush mountains. Expert guides, customized itineraries, and unforgettable mountain experiences.',
-  openGraph: {
-    title: 'Hindukash Trek and Tour | Adventure Tours in Northern Pakistan',
-    description: 'Experience breathtaking trekking expeditions and adventure tours in the Hindu Kush mountains.',
-    type: 'website',
-    url: 'https://hindustrekandtour.com',
-  },
-}
+import { tours, destinations, testimonials, heroSlides, cities } from '@/lib/tours-data'
 
 export default function Home() {
-  const featuredTours = tours.slice(0, 3)
+  const searchParams = useSearchParams()
+  const selectedCityId = searchParams.get('city')
+  
+  let displayTours = tours.slice(0, 3)
+  let pageTitle = 'Featured Expeditions'
+  let pageDescription = 'Handpicked adventures for unforgettable mountain experiences'
+  
+  if (selectedCityId) {
+    const selectedCity = cities.find(c => c.id === selectedCityId)
+    displayTours = tours.filter(tour => tour.city === selectedCityId)
+    pageTitle = `Tours in ${selectedCity?.name}`
+    pageDescription = `All available tours and trekking expeditions in ${selectedCity?.name}`
+  }
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -78,25 +81,38 @@ export default function Home() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="font-serif text-4xl font-bold text-foreground mb-2">
-                Featured Expeditions
+                {pageTitle}
               </h2>
               <p className="text-muted-foreground">
-                Handpicked adventures for unforgettable mountain experiences
+                {pageDescription}
               </p>
             </div>
-            <Button asChild variant="outline" className="hidden md:flex">
-              <Link href="/tours">
-                View All Tours
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            {!selectedCityId && (
+              <Button asChild variant="outline" className="hidden md:flex">
+                <Link href="/tours">
+                  View All Tours
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            )}
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredTours.map((tour) => (
-              <TourCard key={tour.id} tour={tour} />
-            ))}
-          </div>
+          {displayTours.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {displayTours.map((tour) => (
+                <TourCard key={tour.id} tour={tour} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground text-lg mb-4">
+                No tours available in this destination yet.
+              </p>
+              <Button asChild variant="outline">
+                <Link href="/">View All Tours</Link>
+              </Button>
+            </div>
+          )}
           
           <div className="mt-8 flex md:hidden">
             <Button asChild className="w-full bg-primary hover:bg-primary/90">

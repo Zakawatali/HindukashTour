@@ -11,6 +11,7 @@ export interface Tour {
   price: number
   rating: number
   reviews: number
+  city: string
   itinerary: {
     day: number
     title: string
@@ -107,6 +108,7 @@ export const tours: Tour[] = [
     price: 1299,
     rating: 4.8,
     reviews: 124,
+    city: 'gilgit',
     itinerary: [
       {
         day: 1,
@@ -158,6 +160,7 @@ export const tours: Tour[] = [
     price: 1099,
     rating: 4.9,
     reviews: 186,
+    city: 'hunza',
     itinerary: [
       {
         day: 1,
@@ -214,6 +217,7 @@ export const tours: Tour[] = [
     price: 599,
     rating: 4.7,
     reviews: 95,
+    city: 'rawalpindi',
     itinerary: [
       {
         day: 1,
@@ -250,6 +254,7 @@ export const tours: Tour[] = [
     price: 1599,
     rating: 4.6,
     reviews: 67,
+    city: 'chitral',
     itinerary: [
       {
         day: 1,

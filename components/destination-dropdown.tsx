@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { ChevronDown } from 'lucide-react'
 import { cities } from '@/lib/tours-data'
 
@@ -9,13 +10,21 @@ interface DestinationDropdownProps {
 }
 
 export function DestinationDropdown({ onSelectCity }: DestinationDropdownProps) {
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const [selectedCity, setSelectedCity] = useState<string>('')
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
+  useEffect(() => {
+    const city = searchParams.get('city') || ''
+    setSelectedCity(city)
+  }, [searchParams])
+
   const handleCityChange = (cityId: string) => {
     setSelectedCity(cityId)
     setIsOpen(false)
+    router.push(`/?city=${cityId}`)
     onSelectCity?.(cityId)
   }
 
