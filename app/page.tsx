@@ -32,7 +32,7 @@ export default function Home() {
       <HeroSlider slides={heroSlides} />
 
       {/* Destination Selector Section */}
-      <section className="py-12 px-4 bg-gradient-to-r from-primary/5 to-primary/10 border-b border-border">
+      <section className="relative z-40 py-12 px-4 bg-gradient-to-r from-primary/5 to-primary/10 border-b border-border">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <h3 className="font-serif text-2xl font-bold text-foreground mb-2">

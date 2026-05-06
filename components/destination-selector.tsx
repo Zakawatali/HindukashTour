@@ -34,35 +34,34 @@ export function DestinationSelector({ onSelectCity }: DestinationSelectorProps) 
   }, {} as Record<string, typeof cities>)
 
   return (
-    <div className="w-full">
-      <label className="block text-sm font-medium text-foreground mb-2">
+    <div className="w-full relative z-50">
+      <label className="block text-sm font-medium text-foreground mb-3">
         Select Destination
       </label>
-      <Select value={selectedCity} onValueChange={handleCityChange}>
-        <SelectTrigger className="w-full bg-white border-2 border-primary hover:border-primary/80">
-          <SelectValue placeholder="Choose a destination..." />
-        </SelectTrigger>
-        <SelectContent>
-          {Object.entries(citiesByRegion).map(([region, regionCities]) => (
-            <SelectGroup key={region}>
-              <SelectLabel className="font-semibold text-primary">{region}</SelectLabel>
-              {regionCities.map((city) => (
-                <SelectItem key={city.id} value={city.id}>
-                  <div className="flex flex-col">
+      <div className="relative">
+        <Select value={selectedCity} onValueChange={handleCityChange}>
+          <SelectTrigger className="w-full bg-white border-2 border-primary hover:border-primary/80 cursor-pointer">
+            <SelectValue placeholder="Choose a destination..." />
+          </SelectTrigger>
+          <SelectContent className="w-full z-50">
+            {Object.entries(citiesByRegion).map(([region, regionCities]) => (
+              <SelectGroup key={region}>
+                <SelectLabel className="font-semibold text-primary">{region}</SelectLabel>
+                {regionCities.map((city) => (
+                  <SelectItem key={city.id} value={city.id} className="cursor-pointer">
                     <span className="font-medium">{city.name}</span>
-                    <span className="text-xs text-muted-foreground">{city.description}</span>
-                  </div>
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          ))}
-        </SelectContent>
-      </Select>
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
       
       {selectedCity && (
-        <div className="mt-3 p-3 bg-secondary rounded-lg">
-          <p className="text-sm text-muted-foreground">
-            Selected: <span className="font-semibold text-foreground">
+        <div className="mt-4 p-3 bg-primary/10 border border-primary/20 rounded-lg">
+          <p className="text-sm">
+            Selected: <span className="font-semibold text-primary">
               {cities.find(c => c.id === selectedCity)?.name}
             </span>
           </p>
