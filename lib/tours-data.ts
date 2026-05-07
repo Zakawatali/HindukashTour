@@ -731,6 +731,990 @@ export const tours: Tour[] = [
         description: 'Return to Gilgit with adventure memories.'
       }
     ]
+  },
+  // SKARDU TOURS
+  {
+    id: 'skardu-3days-express',
+    title: 'Skardu Express - 3 Days',
+    shortDescription: 'Quick Skardu experience with Deosai Plains and Shangrila Resort',
+    description: 'A compact 3-day tour covering the highlights of Skardu including the scenic Deosai plateau and pristine Shangrila.',
+    image: '/tours/skardu-express.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '4,100m',
+    season: ['May', 'June', 'July', 'August', 'September'],
+    price: 549,
+    rating: 4.8,
+    reviews: 234,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Skardu Arrival & Shangrila',
+        description: 'Arrive in Skardu, visit the beautiful Shangrila Resort with alpine meadows and lake views.'
+      },
+      {
+        day: 2,
+        title: 'Deosai Plains',
+        description: 'Full day at Deosai plateau enjoying alpine meadows, wildflowers, and panoramic mountain views.'
+      },
+      {
+        day: 3,
+        title: 'Departure',
+        description: 'Morning exploration before departure or visit local bazaar.'
+      }
+    ]
+  },
+  {
+    id: 'skardu-4days-complete',
+    title: 'Skardu Complete - 4 Days',
+    shortDescription: 'Comprehensive Skardu tour with Deosai, Shangrila, and local culture',
+    description: 'A complete 4-day experience combining the best of Skardu including Deosai Plains, Shangrila, and traditional markets.',
+    image: '/tours/skardu-complete.jpg',
+    duration: '4 Days',
+    difficulty: 'Easy',
+    maxAltitude: '4,100m',
+    season: ['May', 'June', 'July', 'August', 'September'],
+    price: 699,
+    rating: 4.9,
+    reviews: 267,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Skardu Arrival & Exploration',
+        description: 'Arrive, acclimatize, visit local bazaars and explore the town.'
+      },
+      {
+        day: 2,
+        title: 'Deosai Plains Adventure',
+        description: 'Full day at Deosai with guided nature walks and photography.'
+      },
+      {
+        day: 3,
+        title: 'Shangrila & Twin Lakes',
+        description: 'Visit Shangrila Resort, explore Twin Lakes with pristine alpine scenery.'
+      },
+      {
+        day: 4,
+        title: 'Skardu Heritage & Departure',
+        description: 'Visit Skardu Fort, Khardung Glacier viewpoint, and depart.'
+      }
+    ]
+  },
+  {
+    id: 'skardu-5days-glacier',
+    title: 'Skardu Glacier Experience - 5 Days',
+    shortDescription: 'Skardu with glacier trekking including Khardung Glacier trek',
+    description: 'A 5-day adventure featuring Skardu valleys and glaciers with light trekking to Khardung Glacier and ice caves.',
+    image: '/tours/skardu-glacier.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,900m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.8,
+    reviews: 189,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Skardu Arrival',
+        description: 'Arrive and acclimatize in Skardu town.'
+      },
+      {
+        day: 2,
+        title: 'Deosai Plains Full Day',
+        description: 'Explore the world\'s second highest plateau with guides.'
+      },
+      {
+        day: 3,
+        title: 'Khardung Glacier Trek',
+        description: 'Trek to Khardung Glacier with views of pristine ice formations.'
+      },
+      {
+        day: 4,
+        title: 'Shangrila & Twin Lakes',
+        description: 'Visit scenic Shangrila Resort and Twin Lakes region.'
+      },
+      {
+        day: 5,
+        title: 'Skardu Culture & Departure',
+        description: 'Local markets, Skardu Fort, and safe departure.'
+      }
+    ]
+  },
+  {
+    id: 'skardu-7days-ultimate',
+    title: 'Skardu Ultimate - 7 Days',
+    shortDescription: 'Ultimate Skardu tour with glaciers, plateaus, lakes and mountain treks',
+    description: 'The complete 7-day Skardu experience including Deosai, Khardung Glacier, Shangrila, and remote mountain villages.',
+    image: '/tours/skardu-ultimate.jpg',
+    duration: '7 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '4,100m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 1299,
+    rating: 4.9,
+    reviews: 312,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Skardu Arrival & Acclimatization',
+        description: 'Arrive, rest, and explore Skardu town bazaars.'
+      },
+      {
+        day: 2,
+        title: 'Deosai Plains Day 1',
+        description: 'First day at Deosai with wildflower meadows and alpine lakes.'
+      },
+      {
+        day: 3,
+        title: 'Deosai Plains Day 2',
+        description: 'Continue exploring Deosai with photography and nature walks.'
+      },
+      {
+        day: 4,
+        title: 'Khardung Glacier Trek',
+        description: 'Trek to Khardung Glacier exploring ice formations and glacier landscape.'
+      },
+      {
+        day: 5,
+        title: 'Shangrila & Twin Lakes',
+        description: 'Visit the serene Shangrila Resort with pristine mountain lake views.'
+      },
+      {
+        day: 6,
+        title: 'Astore Valley Trek',
+        description: 'Trek to scenic Astore Valley with mountain village exploration.'
+      },
+      {
+        day: 7,
+        title: 'Skardu Heritage & Departure',
+        description: 'Visit Skardu Fort and Khardung viewpoints before departure.'
+      }
+    ]
+  },
+  // HUNZA TOURS
+  {
+    id: 'hunza-3days-classic',
+    title: 'Hunza Valley Classic - 3 Days',
+    shortDescription: 'Classic Hunza experience with Karimabad forts and alpine meadows',
+    description: 'A classic 3-day tour of the legendary Hunza Valley including ancient forts and scenic mountain villages.',
+    image: '/tours/hunza-classic.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '2,500m',
+    season: ['April', 'May', 'June', 'September', 'October'],
+    price: 499,
+    rating: 4.8,
+    reviews: 289,
+    city: 'hunza',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hunza Valley Arrival',
+        description: 'Arrive in Karimabad, visit the historic Baltit Fort with panoramic valley views.'
+      },
+      {
+        day: 2,
+        title: 'Hunza Heritage Tour',
+        description: 'Explore Altit Fort, traditional villages, apricot orchards and local culture.'
+      },
+      {
+        day: 3,
+        title: 'Departure',
+        description: 'Morning market visit or scenic drives before departure.'
+      }
+    ]
+  },
+  {
+    id: 'hunza-4days-culture',
+    title: 'Hunza Culture & Peaks - 4 Days',
+    shortDescription: 'Hunza villages, forts, and light trekking to local peaks',
+    description: 'A 4-day immersion in Hunza culture with fort visits, village treks, and beautiful mountain viewpoints.',
+    image: '/tours/hunza-culture.jpg',
+    duration: '4 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,800m',
+    season: ['April', 'May', 'June', 'September', 'October'],
+    price: 649,
+    rating: 4.9,
+    reviews: 245,
+    city: 'hunza',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Karimabad & Baltit Fort',
+        description: 'Arrive, explore Baltit Fort with historical significance and valley views.'
+      },
+      {
+        day: 2,
+        title: 'Altit Fort & Village Trek',
+        description: 'Visit Altit Fort, trek through traditional villages and orchards.'
+      },
+      {
+        day: 3,
+        title: 'Hunza Peak Trek',
+        description: 'Light trek to scenic viewpoints with Rakaposhi views.'
+      },
+      {
+        day: 4,
+        title: 'Hunza Bazaar & Departure',
+        description: 'Explore local markets and artisan shops before departure.'
+      }
+    ]
+  },
+  {
+    id: 'hunza-5days-adventure',
+    title: 'Hunza Valley Adventure - 5 Days',
+    shortDescription: 'Multi-day adventure with Gilgit, Hunza, and glacier views',
+    description: 'A 5-day adventure combining Gilgit city exploration with Hunza Valley heritage and high altitude treks.',
+    image: '/tours/hunza-adventure.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,200m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.9,
+    reviews: 267,
+    city: 'hunza',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Arrival & Exploration',
+        description: 'Arrive in Gilgit, explore bazaars and local culture.'
+      },
+      {
+        day: 2,
+        title: 'Gilgit to Hunza Valley',
+        description: 'Scenic drive to Hunza Valley, explore Karimabad and Baltit Fort.'
+      },
+      {
+        day: 3,
+        title: 'Hunza Village Trek',
+        description: 'Trek through traditional villages, orchards, and meet local communities.'
+      },
+      {
+        day: 4,
+        title: 'Altit Fort & Glacier Viewpoint',
+        description: 'Explore Altit Fort and trek to viewpoints with Karakoram views.'
+      },
+      {
+        day: 5,
+        title: 'Hunza Culture & Departure',
+        description: 'Final cultural exploration and departure.'
+      }
+    ]
+  },
+  {
+    id: 'hunza-7days-comprehensive',
+    title: 'Hunza Comprehensive - 7 Days',
+    shortDescription: 'Complete Hunza experience with multiple valleys and trekking',
+    description: 'A comprehensive 7-day tour of Hunza Valley including multiple forts, villages, glaciers views, and high altitude treks.',
+    image: '/tours/hunza-comprehensive.jpg',
+    duration: '7 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,500m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 1299,
+    rating: 4.9,
+    reviews: 298,
+    city: 'hunza',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Arrival',
+        description: 'Arrive in Gilgit, acclimatize and explore the bazaar.'
+      },
+      {
+        day: 2,
+        title: 'Gilgit to Karimabad',
+        description: 'Scenic drive to Hunza, visit Baltit Fort and explore Karimabad.'
+      },
+      {
+        day: 3,
+        title: 'Hunza Village Trek Day 1',
+        description: 'Trek through traditional Hunza villages with cultural interactions.'
+      },
+      {
+        day: 4,
+        title: 'Hunza Village Trek Day 2',
+        description: 'Continue trekking to apricot orchards and remote settlements.'
+      },
+      {
+        day: 5,
+        title: 'Altit Fort & Glacier Region',
+        description: 'Explore Altit Fort and trek toward glacier viewpoints.'
+      },
+      {
+        day: 6,
+        title: 'Fairy Meadows Trek',
+        description: 'Trek to scenic meadows with Rakaposhi and Hunza views.'
+      },
+      {
+        day: 7,
+        title: 'Hunza Heritage & Departure',
+        description: 'Final cultural exploration and safe departure.'
+      }
+    ]
+  },
+  // GILGIT TOURS
+  {
+    id: 'gilgit-3days-highlights',
+    title: 'Gilgit Highlights - 3 Days',
+    shortDescription: 'Quick Gilgit tour with bazaar, Karakoram Highway views, and local culture',
+    description: 'A quick 3-day exploration of Gilgit city and surrounding areas including markets and cultural sites.',
+    image: '/tours/gilgit-highlights.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '1,500m',
+    season: ['April', 'May', 'June', 'September', 'October', 'November'],
+    price: 449,
+    rating: 4.7,
+    reviews: 156,
+    city: 'gilgit',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Arrival & Bazaar',
+        description: 'Arrive in Gilgit, explore the colorful bazaar and local markets.'
+      },
+      {
+        day: 2,
+        title: 'Karakoram Views & Culture',
+        description: 'Visit viewpoints overlooking the Karakoram range, explore local museums.'
+      },
+      {
+        day: 3,
+        title: 'Departure',
+        description: 'Final morning exploration before safe departure.'
+      }
+    ]
+  },
+  {
+    id: 'gilgit-4days-gateway',
+    title: 'Gilgit Gateway - 4 Days',
+    shortDescription: 'Gilgit as a base for exploring surrounding peaks and valleys',
+    description: 'A 4-day tour using Gilgit as a base to explore surrounding Karakoram valleys and mountain viewpoints.',
+    image: '/tours/gilgit-gateway.jpg',
+    duration: '4 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,800m',
+    season: ['May', 'June', 'July', 'August', 'September'],
+    price: 699,
+    rating: 4.8,
+    reviews: 198,
+    city: 'gilgit',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit City Exploration',
+        description: 'Explore Gilgit bazaars, museums, and cultural heritage sites.'
+      },
+      {
+        day: 2,
+        title: 'Rakaposhi Viewpoint Trek',
+        description: 'Trek to viewpoints with stunning Rakaposhi mountain views.'
+      },
+      {
+        day: 3,
+        title: 'Karakoram Highway Scenic Tour',
+        description: 'Drive scenic portions of Karakoram Highway with multiple stops.'
+      },
+      {
+        day: 4,
+        title: 'Gilgit Heritage & Departure',
+        description: 'Visit remaining heritage sites and depart.'
+      }
+    ]
+  },
+  {
+    id: 'gilgit-5days-explorer',
+    title: 'Gilgit Explorer - 5 Days',
+    shortDescription: 'Explore Gilgit, surrounding valleys, and light mountain trekking',
+    description: 'A 5-day exploration of Gilgit and surrounding Karakoram valleys with light trekking and cultural experiences.',
+    image: '/tours/gilgit-explorer.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,200m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.8,
+    reviews: 224,
+    city: 'gilgit',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Arrival & Orientation',
+        description: 'Arrive in Gilgit, explore bazaars and get oriented.'
+      },
+      {
+        day: 2,
+        title: 'Rakaposhi Base Trek',
+        description: 'Trek toward Rakaposhi base with stunning peak views.'
+      },
+      {
+        day: 3,
+        title: 'Gilgit Valley Exploration',
+        description: 'Explore surrounding valleys and local villages.'
+      },
+      {
+        day: 4,
+        title: 'Karakoram Viewpoint Trek',
+        description: 'Trek to high viewpoints with Karakoram panoramas.'
+      },
+      {
+        day: 5,
+        title: 'Gilgit Culture & Departure',
+        description: 'Final market visits and safe departure.'
+      }
+    ]
+  },
+  {
+    id: 'gilgit-7days-epic',
+    title: 'Gilgit Epic - 7 Days',
+    shortDescription: 'Epic week-long Gilgit adventure with multiple treks and Karakoram exploration',
+    description: 'An epic 7-day adventure from Gilgit including multiple trekking routes, glacier views, and cultural immersion.',
+    image: '/tours/gilgit-epic.jpg',
+    duration: '7 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '3,800m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 1399,
+    rating: 4.8,
+    reviews: 267,
+    city: 'gilgit',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Arrival',
+        description: 'Arrive and acclimatize in Gilgit.'
+      },
+      {
+        day: 2,
+        title: 'Rakaposhi Base Camp Trek Day 1',
+        description: 'Begin trek to Rakaposhi base with stunning views.'
+      },
+      {
+        day: 3,
+        title: 'Rakaposhi Base Camp Trek Day 2',
+        description: 'Continue to higher camps with alpine meadow views.'
+      },
+      {
+        day: 4,
+        title: 'Karakoram Glacier Exploration',
+        description: 'Explore pristine glaciers near Rakaposhi.'
+      },
+      {
+        day: 5,
+        title: 'Return Trek & Valley Exploration',
+        description: 'Trek back exploring surrounding valleys.'
+      },
+      {
+        day: 6,
+        title: 'Gilgit City & Cultural Sites',
+        description: 'Explore Gilgit city museums, bazaars, and heritage sites.'
+      },
+      {
+        day: 7,
+        title: 'Karakoram Highway Scenic Drive & Departure',
+        description: 'Drive portions of Karakoram Highway and depart.'
+      }
+    ]
+  },
+  // CHITRAL TOURS
+  {
+    id: 'chitral-3days-compact',
+    title: 'Chitral Compact - 3 Days',
+    shortDescription: 'Quick Chitral experience with Peshawar valley views and local culture',
+    description: 'A compact 3-day introduction to Chitral with town exploration and nearby scenic areas.',
+    image: '/tours/chitral-compact.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '1,800m',
+    season: ['May', 'June', 'September', 'October'],
+    price: 449,
+    rating: 4.6,
+    reviews: 98,
+    city: 'chitral',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Chitral Arrival',
+        description: 'Arrive in Chitral, explore the town and local bazaars.'
+      },
+      {
+        day: 2,
+        title: 'Peshawar Valley & Scenery',
+        description: 'Explore nearby valleys with scenic mountain views.'
+      },
+      {
+        day: 3,
+        title: 'Departure',
+        description: 'Final exploration before departure.'
+      }
+    ]
+  },
+  {
+    id: 'chitral-4days-valleys',
+    title: 'Chitral Valleys - 4 Days',
+    shortDescription: 'Explore Chitral town and surrounding remote valleys',
+    description: 'A 4-day tour exploring Chitral and its beautiful surrounding valleys with hiking and cultural experiences.',
+    image: '/tours/chitral-valleys.jpg',
+    duration: '4 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,400m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 699,
+    rating: 4.7,
+    reviews: 145,
+    city: 'chitral',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Chitral Town Exploration',
+        description: 'Explore Chitral bazaar, museums, and cultural sites.'
+      },
+      {
+        day: 2,
+        title: 'Peshawar Valley Trek',
+        description: 'Trek to nearby valleys with panoramic views.'
+      },
+      {
+        day: 3,
+        title: 'Mountain Village Visit',
+        description: 'Visit traditional mountain villages with cultural interactions.'
+      },
+      {
+        day: 4,
+        title: 'Scenic Drives & Departure',
+        description: 'Scenic drives exploring the region and departure.'
+      }
+    ]
+  },
+  {
+    id: 'chitral-5days-adventure',
+    title: 'Chitral Adventure - 5 Days',
+    shortDescription: 'Chitral with trekking in remote valleys and mountain communities',
+    description: 'A 5-day adventure trekking through remote Chitral valleys with visits to traditional mountain communities.',
+    image: '/tours/chitral-adventure.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,800m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.8,
+    reviews: 167,
+    city: 'chitral',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Chitral Arrival & Orientation',
+        description: 'Arrive and explore Chitral town.'
+      },
+      {
+        day: 2,
+        title: 'Remote Valley Trek Day 1',
+        description: 'Begin trekking into remote valleys.'
+      },
+      {
+        day: 3,
+        title: 'Remote Valley Trek Day 2',
+        description: 'Continue trekking with mountain village visits.'
+      },
+      {
+        day: 4,
+        title: 'Traditional Community Visit',
+        description: 'Visit traditional settlements and cultural sites.'
+      },
+      {
+        day: 5,
+        title: 'Return to Chitral & Departure',
+        description: 'Return journey and safe departure.'
+      }
+    ]
+  },
+  {
+    id: 'chitral-7days-expedition',
+    title: 'Chitral Expedition - 7 Days',
+    shortDescription: 'Week-long Chitral expedition with multiple valleys and high altitude trekking',
+    description: 'A comprehensive 7-day expedition exploring multiple Chitral valleys with high altitude trekking and cultural immersion.',
+    image: '/tours/chitral-expedition.jpg',
+    duration: '7 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '3,500m',
+    season: ['July', 'August', 'September'],
+    price: 1399,
+    rating: 4.8,
+    reviews: 189,
+    city: 'chitral',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Chitral Arrival',
+        description: 'Arrive and acclimatize in Chitral.'
+      },
+      {
+        day: 2,
+        title: 'Peshawar Valley Trek Day 1',
+        description: 'Begin trekking through Peshawar Valley.'
+      },
+      {
+        day: 3,
+        title: 'Peshawar Valley Trek Day 2',
+        description: 'Continue exploring pristine valleys.'
+      },
+      {
+        day: 4,
+        title: 'High Altitude Trek',
+        description: 'Trek to higher elevations with panoramic views.'
+      },
+      {
+        day: 5,
+        title: 'Remote Village Exploration',
+        description: 'Explore remote mountain communities and traditional culture.'
+      },
+      {
+        day: 6,
+        title: 'Return Trek',
+        description: 'Trek back toward civilization.'
+      },
+      {
+        day: 7,
+        title: 'Chitral Culture & Departure',
+        description: 'Final cultural exploration and safe departure.'
+      }
+    ]
+  },
+  // KARIMABAD TOURS
+  {
+    id: 'karimabad-3days-forts',
+    title: 'Karimabad Forts - 3 Days',
+    shortDescription: 'Quick tour of Baltit and Altit forts with village walks',
+    description: 'A quick 3-day tour exploring the historic forts and charming villages of Karimabad in Hunza Valley.',
+    image: '/tours/karimabad-forts.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '2,200m',
+    season: ['April', 'May', 'June', 'September', 'October'],
+    price: 499,
+    rating: 4.8,
+    reviews: 212,
+    city: 'karimabad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Karimabad Arrival & Baltit Fort',
+        description: 'Arrive and explore the historic Baltit Fort.'
+      },
+      {
+        day: 2,
+        title: 'Altit Fort & Village Walks',
+        description: 'Explore Altit Fort and trek through traditional villages.'
+      },
+      {
+        day: 3,
+        title: 'Departure',
+        description: 'Final exploration or market visit before departure.'
+      }
+    ]
+  },
+  {
+    id: 'karimabad-4days-culture',
+    title: 'Karimabad Culture - 4 Days',
+    shortDescription: 'Karimabad forts, orchards, and immersion in Hunza lifestyle',
+    description: 'A 4-day immersion into Karimabad life including forts, orchards, and authentic Hunza cultural experiences.',
+    image: '/tours/karimabad-culture.jpg',
+    duration: '4 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,400m',
+    season: ['May', 'June', 'September', 'October'],
+    price: 649,
+    rating: 4.9,
+    reviews: 234,
+    city: 'karimabad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Karimabad & Baltit Fort',
+        description: 'Explore Karimabad and the majestic Baltit Fort.'
+      },
+      {
+        day: 2,
+        title: 'Apricot Orchards Trek',
+        description: 'Trek through famous apricot orchards and meet local farmers.'
+      },
+      {
+        day: 3,
+        title: 'Altit Fort & Village Life',
+        description: 'Explore Altit Fort and experience traditional village life.'
+      },
+      {
+        day: 4,
+        title: 'Local Bazaar & Departure',
+        description: 'Shop at local bazaars and depart with Hunza memories.'
+      }
+    ]
+  },
+  {
+    id: 'karimabad-5days-explorer',
+    title: 'Karimabad Explorer - 5 Days',
+    shortDescription: 'Extended Karimabad tour with nearby valleys and trekking',
+    description: 'A 5-day exploration of Karimabad and surrounding Hunza valleys with multiple trekking routes.',
+    image: '/tours/karimabad-explorer.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,800m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.9,
+    reviews: 256,
+    city: 'karimabad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Karimabad Arrival & Forts',
+        description: 'Arrive and explore both Baltit and Altit forts.'
+      },
+      {
+        day: 2,
+        title: 'Orchard Trek Day 1',
+        description: 'Trek through apricot orchards and terraced fields.'
+      },
+      {
+        day: 3,
+        title: 'Hunza Valley Trek',
+        description: 'Trek to scenic viewpoints around Hunza Valley.'
+      },
+      {
+        day: 4,
+        title: 'Village Exploration',
+        description: 'Visit remote villages and experience local hospitality.'
+      },
+      {
+        day: 5,
+        title: 'Karimabad Culture & Departure',
+        description: 'Final cultural activities and safe departure.'
+      }
+    ]
+  },
+  {
+    id: 'karimabad-7days-immersion',
+    title: 'Karimabad Immersion - 7 Days',
+    shortDescription: 'Deep cultural immersion in Karimabad with extended trekking',
+    description: 'A comprehensive 7-day deep immersion into Karimabad culture with extended valley trekking and local interactions.',
+    image: '/tours/karimabad-immersion.jpg',
+    duration: '7 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,000m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 1299,
+    rating: 4.9,
+    reviews: 278,
+    city: 'karimabad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Karimabad Arrival',
+        description: 'Arrive and explore the charming town.'
+      },
+      {
+        day: 2,
+        title: 'Baltit Fort Deep Exploration',
+        description: 'Detailed exploration of Baltit Fort with historical insights.'
+      },
+      {
+        day: 3,
+        title: 'Orchard Trek Day 1',
+        description: 'Begin trekking through extensive apricot orchards.'
+      },
+      {
+        day: 4,
+        title: 'Orchard Trek Day 2',
+        description: 'Continue trekking with farmstead visits and local interactions.'
+      },
+      {
+        day: 5,
+        title: 'Altit Fort & Surrounding Valleys',
+        description: 'Explore Altit Fort and trek to nearby scenic valleys.'
+      },
+      {
+        day: 6,
+        title: 'Remote Village Trek',
+        description: 'Trek to remote settlements with cultural immersion.'
+      },
+      {
+        day: 7,
+        title: 'Karimabad Farewell & Departure',
+        description: 'Final cultural activities and safe departure.'
+      }
+    ]
+  },
+  // RAWALPINDI TOURS
+  {
+    id: 'rawalpindi-3days-nathia-gali',
+    title: 'Rawalpindi to Nathia Gali - 3 Days',
+    shortDescription: 'Quick alpine escape from Rawalpindi to scenic Nathia Gali meadows',
+    description: 'A 3-day alpine escape from Rawalpindi to the scenic pine forests and meadows of Nathia Gali.',
+    image: '/tours/nathia-gali.jpg',
+    duration: '3 Days',
+    difficulty: 'Easy',
+    maxAltitude: '2,500m',
+    season: ['April', 'May', 'June', 'September', 'October', 'November'],
+    price: 399,
+    rating: 4.7,
+    reviews: 289,
+    city: 'rawalpindi',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Rawalpindi to Nathia Gali',
+        description: 'Drive to scenic Nathia Gali plateau with pine forest views.'
+      },
+      {
+        day: 2,
+        title: 'Nathia Gali Exploration',
+        description: 'Trek through meadows and explore the scenic plateau.'
+      },
+      {
+        day: 3,
+        title: 'Return to Rawalpindi',
+        description: 'Return journey with scenic stops.'
+      }
+    ]
+  },
+  {
+    id: 'rawalpindi-4days-murree-nathia',
+    title: 'Murree & Nathia Gali - 4 Days',
+    shortDescription: 'Combine hill stations Murree and Nathia Gali from Rawalpindi base',
+    description: 'A 4-day tour combining two popular hill stations - Murree and Nathia Gali with scenic drives and light trekking.',
+    image: '/tours/murree-nathia.jpg',
+    duration: '4 Days',
+    difficulty: 'Easy',
+    maxAltitude: '2,600m',
+    season: ['April', 'May', 'June', 'September', 'October', 'November'],
+    price: 549,
+    rating: 4.8,
+    reviews: 312,
+    city: 'rawalpindi',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Rawalpindi to Murree',
+        description: 'Drive to scenic hill station Murree with panoramic views.'
+      },
+      {
+        day: 2,
+        title: 'Murree Exploration',
+        description: 'Explore Murree bazaars, viewpoints, and hiking trails.'
+      },
+      {
+        day: 3,
+        title: 'Murree to Nathia Gali',
+        description: 'Drive to Nathia Gali with scenic mountain views.'
+      },
+      {
+        day: 4,
+        title: 'Nathia Gali & Return',
+        description: 'Explore Nathia Gali meadows and return to Rawalpindi.'
+      }
+    ]
+  },
+  {
+    id: 'rawalpindi-5days-alpine-circuit',
+    title: 'Alpine Circuit - 5 Days',
+    shortDescription: 'Complete alpine circuit exploring multiple hill stations from Rawalpindi',
+    description: 'A 5-day alpine circuit tour from Rawalpindi covering multiple scenic hill stations and trekking routes.',
+    image: '/tours/alpine-circuit.jpg',
+    duration: '5 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '2,900m',
+    season: ['May', 'June', 'September', 'October'],
+    price: 749,
+    rating: 4.8,
+    reviews: 267,
+    city: 'rawalpindi',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Rawalpindi to Murree',
+        description: 'Drive to Murree with scenic Himalayan views.'
+      },
+      {
+        day: 2,
+        title: 'Murree Trek & Exploration',
+        description: 'Trek through Murree forests and explore hill station.'
+      },
+      {
+        day: 3,
+        title: 'Murree to Nathia Gali',
+        description: 'Drive through scenic routes to Nathia Gali.'
+      },
+      {
+        day: 4,
+        title: 'Nathia Gali Trek',
+        description: 'Trek through alpine meadows and pine forests.'
+      },
+      {
+        day: 5,
+        title: 'Return to Rawalpindi',
+        description: 'Scenic drive back with multiple stops and viewpoints.'
+      }
+    ]
+  },
+  {
+    id: 'rawalpindi-7days-himalayan',
+    title: 'Himalayan Adventure - 7 Days',
+    shortDescription: 'Extended week exploring multiple Himalayan hills stations and valleys',
+    description: 'A comprehensive 7-day Himalayan adventure exploring multiple hill stations, valleys, and trekking routes from Rawalpindi.',
+    image: '/tours/himalayan-adventure.jpg',
+    duration: '7 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '3,200m',
+    season: ['June', 'July', 'August', 'September', 'October'],
+    price: 1099,
+    rating: 4.9,
+    reviews: 289,
+    city: 'rawalpindi',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Rawalpindi Departure',
+        description: 'Depart Rawalpindi toward hill stations.'
+      },
+      {
+        day: 2,
+        title: 'Murree Arrival & Exploration',
+        description: 'Arrive in Murree, explore bazaars and viewpoints.'
+      },
+      {
+        day: 3,
+        title: 'Murree Trek Day 1',
+        description: 'Trek through forest trails with Himalayan views.'
+      },
+      {
+        day: 4,
+        title: 'Murree to Nathia Gali',
+        description: 'Scenic drive to Nathia Gali plateau.'
+      },
+      {
+        day: 5,
+        title: 'Nathia Gali Trek Day 1',
+        description: 'Trek through alpine meadows and explore the plateau.'
+      },
+      {
+        day: 6,
+        title: 'Nathia Gali Trek Day 2',
+        description: 'Continue exploring with nature walks and photography.'
+      },
+      {
+        day: 7,
+        title: 'Return to Rawalpindi',
+        description: 'Scenic return drive to Rawalpindi.'
+      }
+    ]
   }
 ]
 
