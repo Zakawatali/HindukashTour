@@ -307,6 +307,430 @@ export const tours: Tour[] = [
         description: 'End of expedition and departure.'
       }
     ]
+  },
+  {
+    id: 'skardu-deosai-adventure',
+    title: 'Skardu & Deosai Plains Trek',
+    shortDescription: 'Experience the breathtaking Deosai Plains, the world\'s second highest plateau',
+    description: 'Explore the spectacular Deosai plateau at 4,100m surrounded by alpine meadows and pristine mountain peaks.',
+    image: '/tours/skardu-deosai.jpg',
+    duration: '6 Days',
+    difficulty: 'Moderate',
+    maxAltitude: '4,100m',
+    season: ['June', 'July', 'August', 'September'],
+    price: 899,
+    rating: 4.9,
+    reviews: 156,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Skardu',
+        description: 'Arrive in Skardu and acclimatize. Visit local markets and explore the town.'
+      },
+      {
+        day: 2,
+        title: 'Skardu to Deosai Gate',
+        description: 'Drive to the entrance of Deosai plateau with scenic stops along the way.'
+      },
+      {
+        day: 3,
+        title: 'Deosai Plains Trek Day 1',
+        description: 'Trek through alpine meadows with breathtaking views of surrounding peaks.'
+      },
+      {
+        day: 4,
+        title: 'Deosai Plains Trek Day 2',
+        description: 'Continue exploring the plateau, visit alpine lakes and wildflower meadows.'
+      },
+      {
+        day: 5,
+        title: 'Deosai to Skardu',
+        description: 'Trek back to the plateau entrance and drive to Skardu.'
+      },
+      {
+        day: 6,
+        title: 'Departure from Skardu',
+        description: 'Optional morning exploration before departure.'
+      }
+    ]
+  },
+  {
+    id: 'skardu-k2-base-camp',
+    title: 'K2 Base Camp Expedition',
+    shortDescription: 'Trek to the base camp of the world\'s second highest peak',
+    description: 'An epic expedition trek to K2 base camp with views of Karakoram peaks and pristine glaciers.',
+    image: '/tours/k2-base-camp.jpg',
+    duration: '14 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '5,000m',
+    season: ['June', 'July', 'August'],
+    price: 2199,
+    rating: 4.8,
+    reviews: 89,
+    city: 'skardu',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Skardu Arrival',
+        description: 'Meet team and acclimatize in Skardu.'
+      },
+      {
+        day: 2,
+        title: 'Skardu to Askole',
+        description: 'Drive to the start of the trek, scenic journey through Karakoram Highway.'
+      },
+      {
+        day: 3,
+        title: 'Askole to Paiju',
+        description: 'Trek to Paiju camp.'
+      },
+      {
+        day: 4,
+        title: 'Paiju to Urdokas',
+        description: 'Trek through moraine fields.'
+      },
+      {
+        day: 5,
+        title: 'Urdokas to Concordia',
+        description: 'Trek to Concordia with views of K2, Broad Peak, and other giants.'
+      },
+      {
+        day: 6,
+        title: 'Concordia to K2 Base Camp',
+        description: 'Final trek to K2 base camp at 5,000m.'
+      },
+      {
+        day: 7,
+        title: 'K2 Base Camp Rest',
+        description: 'Rest day at base camp with photography opportunities.'
+      },
+      {
+        day: 8,
+        title: 'K2 Base Camp Exploration',
+        description: 'Explore the base camp and surrounding peaks.'
+      },
+      {
+        day: 9,
+        title: 'K2 Base Camp to Concordia',
+        description: 'Trek back towards Concordia.'
+      },
+      {
+        day: 10,
+        title: 'Concordia to Urdokas',
+        description: 'Continue descent.'
+      },
+      {
+        day: 11,
+        title: 'Urdokas to Paiju',
+        description: 'Trek back to Paiju.'
+      },
+      {
+        day: 12,
+        title: 'Paiju to Askole',
+        description: 'Final trek back to Askole.'
+      },
+      {
+        day: 13,
+        title: 'Askole to Skardu',
+        description: 'Drive back to Skardu.'
+      },
+      {
+        day: 14,
+        title: 'Departure',
+        description: 'Departure from Skardu.'
+      }
+    ]
+  },
+  {
+    id: 'karimabad-fort-valley',
+    title: 'Karimabad Heritage & Culture Trek',
+    shortDescription: 'Explore ancient forts and experience Hunza Valley culture in Karimabad',
+    description: 'Discover the historical heritage of Karimabad including ancient forts and traditional Hunza villages.',
+    image: '/tours/karimabad-fort.jpg',
+    duration: '5 Days',
+    difficulty: 'Easy',
+    maxAltitude: '2,400m',
+    season: ['April', 'May', 'June', 'September', 'October'],
+    price: 749,
+    rating: 4.7,
+    reviews: 112,
+    city: 'karimabad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Karimabad',
+        description: 'Arrive and explore the charming village. Visit local bazaar and get oriented.'
+      },
+      {
+        day: 2,
+        title: 'Baltit Fort & Altit Fort Tour',
+        description: 'Explore two historic forts with panoramic views of Hunza Valley.'
+      },
+      {
+        day: 3,
+        title: 'Village Trek & Local Culture',
+        description: 'Trek through local villages, visit apricot orchards, and meet local families.'
+      },
+      {
+        day: 4,
+        title: 'Valley Exploration',
+        description: 'Visit ancient irrigation systems and scenic viewpoints around Karimabad.'
+      },
+      {
+        day: 5,
+        title: 'Departure',
+        description: 'Depart with unforgettable memories of Hunza culture.'
+      }
+    ]
+  },
+  {
+    id: 'ismail-abad-alpine',
+    title: 'Ismail Abad Alpine Circuit',
+    shortDescription: 'Pristine high altitude circuit trek around Ismail Abad valley',
+    description: 'Trek around the scenic Ismail Abad valley with views of the Hindu Kush and pristine alpine environments.',
+    image: '/tours/ismail-abad.jpg',
+    duration: '7 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '4,200m',
+    season: ['July', 'August', 'September'],
+    price: 1199,
+    rating: 4.8,
+    reviews: 78,
+    city: 'ismail-abad',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Ismail Abad',
+        description: 'Reach the remote village and meet local guides.'
+      },
+      {
+        day: 2,
+        title: 'Alpine Circuit Day 1',
+        description: 'Begin trek through pristine alpine meadows.'
+      },
+      {
+        day: 3,
+        title: 'Alpine Circuit Day 2',
+        description: 'Trek to high altitude camp with views of surrounding peaks.'
+      },
+      {
+        day: 4,
+        title: 'Alpine Circuit Day 3',
+        description: 'Complete circuit around the valley with photography opportunities.'
+      },
+      {
+        day: 5,
+        title: 'Alpine Circuit Day 4',
+        description: 'Final high altitude trekking through pristine wilderness.'
+      },
+      {
+        day: 6,
+        title: 'Return to Ismail Abad',
+        description: 'Trek back to the village.'
+      },
+      {
+        day: 7,
+        title: 'Departure',
+        description: 'Safe departure with memories of pristine mountains.'
+      }
+    ]
+  },
+  {
+    id: 'brogil-pass-expedition',
+    title: 'Brogil Valley Expedition',
+    shortDescription: 'Explore the remote Brogil Valley with nomadic herders and pristine wilderness',
+    description: 'An exclusive expedition to the remote Brogil Valley to experience nomadic culture and high altitude wilderness.',
+    image: '/tours/brogil-valley.jpg',
+    duration: '12 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '3,850m',
+    season: ['July', 'August'],
+    price: 1899,
+    rating: 4.7,
+    reviews: 54,
+    city: 'brogil',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Brogil Valley Entry',
+        description: 'Arrive at the Brogil Valley and establish base camp.'
+      },
+      {
+        day: 2,
+        title: 'Valley Exploration Day 1',
+        description: 'Trek through pristine valleys and meet nomadic herders.'
+      },
+      {
+        day: 3,
+        title: 'Valley Exploration Day 2',
+        description: 'Continue exploring with cultural interactions.'
+      },
+      {
+        day: 4,
+        title: 'High Altitude Trek',
+        description: 'Trek to high altitude passes for panoramic views.'
+      },
+      {
+        day: 5,
+        title: 'Brogil Pass Approach',
+        description: 'Approach the historic Brogil Pass.'
+      },
+      {
+        day: 6,
+        title: 'At the Pass',
+        description: 'Spend a day at Brogil Pass exploring the region.'
+      },
+      {
+        day: 7,
+        title: 'Return Trek Day 1',
+        description: 'Begin return journey through remote areas.'
+      },
+      {
+        day: 8,
+        title: 'Return Trek Day 2',
+        description: 'Continue return journey.'
+      },
+      {
+        day: 9,
+        title: 'Return Trek Day 3',
+        description: 'Trek back through pristine valleys.'
+      },
+      {
+        day: 10,
+        title: 'Return Trek Day 4',
+        description: 'Final approach to civilization.'
+      },
+      {
+        day: 11,
+        title: 'Return Trek Day 5',
+        description: 'Trek back to base.'
+      },
+      {
+        day: 12,
+        title: 'Departure',
+        description: 'Safe departure with unforgettable expedition memories.'
+      }
+    ]
+  },
+  {
+    id: 'hunza-golden-peak',
+    title: 'Hunza Golden Peak Climb',
+    shortDescription: 'Climbing expedition on Hunza Golden Peak with technical challenge',
+    description: 'A technical climbing expedition on one of Hunza\'s most iconic and scenic peaks with rock and ice climbing sections.',
+    image: '/tours/golden-peak.jpg',
+    duration: '9 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '4,800m',
+    season: ['July', 'August'],
+    price: 1699,
+    rating: 4.9,
+    reviews: 63,
+    city: 'hunza',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hunza Valley Base',
+        description: 'Arrive and acclimatize in Hunza Valley.'
+      },
+      {
+        day: 2,
+        title: 'Training Day',
+        description: 'Training on basic climbing and alpine techniques.'
+      },
+      {
+        day: 3,
+        title: 'Approach Trek',
+        description: 'Trek to advanced base camp.'
+      },
+      {
+        day: 4,
+        title: 'Acclimatization Climb',
+        description: 'Acclimatization climb to prepare for main summit.'
+      },
+      {
+        day: 5,
+        title: 'Rock Climbing Day',
+        description: 'Technical rock climbing training and practice.'
+      },
+      {
+        day: 6,
+        title: 'Ice Climbing Training',
+        description: 'Ice climbing techniques and preparation.'
+      },
+      {
+        day: 7,
+        title: 'Summit Attempt Day 1',
+        description: 'Begin summit push to high altitude camp.'
+      },
+      {
+        day: 8,
+        title: 'Summit Day',
+        description: 'Final summit push on Golden Peak.'
+      },
+      {
+        day: 9,
+        title: 'Descent & Departure',
+        description: 'Descend and return to Hunza Valley.'
+      }
+    ]
+  },
+  {
+    id: 'gilgit-adventure-combo',
+    title: 'Gilgit Adventure Combo',
+    shortDescription: 'Multi-peak trekking combining several peaks around Gilgit region',
+    description: 'An adventure combining multiple peak treks with glacier crossings and high altitude camping experiences.',
+    image: '/tours/gilgit-combo.jpg',
+    duration: '8 Days',
+    difficulty: 'Challenging',
+    maxAltitude: '4,600m',
+    season: ['July', 'August', 'September'],
+    price: 1399,
+    rating: 4.8,
+    reviews: 94,
+    city: 'gilgit',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Gilgit Base',
+        description: 'Arrive in Gilgit and prepare for multi-peak adventure.'
+      },
+      {
+        day: 2,
+        title: 'Peak 1 Trek',
+        description: 'Trek to first peak with views of Karakoram.'
+      },
+      {
+        day: 3,
+        title: 'Peak 1 Climb',
+        description: 'Climb and summit first peak.'
+      },
+      {
+        day: 4,
+        title: 'Glacier Traverse',
+        description: 'Cross pristine glacier to reach next valley.'
+      },
+      {
+        day: 5,
+        title: 'Peak 2 Trek',
+        description: 'Trek to second peak.'
+      },
+      {
+        day: 6,
+        title: 'Peak 2 Climb',
+        description: 'Climb and summit second peak.'
+      },
+      {
+        day: 7,
+        title: 'Return Trek',
+        description: 'Trek back through the mountains.'
+      },
+      {
+        day: 8,
+        title: 'Departure',
+        description: 'Return to Gilgit with adventure memories.'
+      }
+    ]
   }
 ]
 
