@@ -10,8 +10,8 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
+    { label: 'Home', href: '/' },
     { label: 'Tours', href: '/tours' },
-    { label: 'Destinations', href: '/destinations' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' }
   ]
