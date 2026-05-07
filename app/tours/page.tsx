@@ -1,19 +1,45 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { useState, useMemo } from 'react'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { TourCard } from '@/components/tour-card'
+import { Button } from '@/components/ui/button'
 import { tours } from '@/lib/tours-data'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-export const metadata: Metadata = {
-  title: 'Mountain Trekking Tours | Hindukash Trek and Tour',
-  description: 'Browse our comprehensive collection of trekking expeditions in the Hindu Kush mountains. From easy to challenging adventures.',
-  openGraph: {
-    title: 'Mountain Trekking Tours | Hindukash Trek and Tour',
-    description: 'Browse our comprehensive collection of trekking expeditions in the Hindu Kush mountains.',
-  },
-}
+const TOURS_PER_PAGE = 8
 
 export default function ToursPage() {
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const totalPages = useMemo(() => Math.ceil(tours.length / TOURS_PER_PAGE), [])
+
+  const paginatedTours = useMemo(() => {
+    const startIndex = (currentPage - 1) * TOURS_PER_PAGE
+    const endIndex = startIndex + TOURS_PER_PAGE
+    return tours.slice(startIndex, endIndex)
+  }, [currentPage])
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
+  const handlePageClick = (pageNumber: number) => {
+    setCurrentPage(pageNumber)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
@@ -28,16 +54,61 @@ export default function ToursPage() {
             <p className="text-lg text-muted-foreground max-w-2xl">
               Carefully curated mountain adventures ranging from accessible hiking to challenging high-altitude expeditions
             </p>
+            <p className="text-sm text-muted-foreground mt-4">
+              Showing {(currentPage - 1) * TOURS_PER_PAGE + 1} to {Math.min(currentPage * TOURS_PER_PAGE, tours.length)} of {tours.length} tours
+            </p>
           </div>
         </section>
 
         {/* Tours Grid */}
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {tours.map((tour) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {paginatedTours.map((tour) => (
                 <TourCard key={tour.id} tour={tour} />
               ))}
+            </div>
+
+            {/* Pagination Controls */}
+            <div className="mt-16 flex flex-col items-center gap-6">
+              {/* Page Numbers */}
+              <div className="flex flex-wrap justify-center gap-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
+                  <button
+                    key={pageNumber}
+                    onClick={() => handlePageClick(pageNumber)}
+                    className={`w-10 h-10 rounded-md font-medium transition-colors ${
+                      currentPage === pageNumber
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-secondary hover:bg-secondary/80 text-foreground'
+                    }`}
+                  >
+                    {pageNumber}
+                  </button>
+                ))}
+              </div>
+
+              {/* Navigation Buttons */}
+              <div className="flex gap-4">
+                <Button
+                  onClick={handlePreviousPage}
+                  disabled={currentPage === 1}
+                  variant="outline"
+                  className="flex items-center gap-2"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  Previous
+                </Button>
+                <Button
+                  onClick={handleNextPage}
+                  disabled={currentPage === totalPages}
+                  variant="outline"
+                  className="flex items-center gap-2"
+                >
+                  Next
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </div>
             </div>
           </div>
         </section>
